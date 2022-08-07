@@ -13,12 +13,12 @@ public class Properties extends java.util.Properties {
         super.load(input);
     }
 
-    public String getGmail() {
-        return this.getProperty("gmail");
+    public String getPosteo() {
+        return this.getProperty("posteo");
     }
 
-    public String getGmailSecret() {
-        return this.getProperty("gmailSecret");
+    public String getPosteoSecret() {
+        return this.getProperty("posteoSecret");
     }
 
     public String getToMail() {

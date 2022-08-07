@@ -5,11 +5,11 @@ import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-public class Gmail extends Mail {
+public class Posteo extends Mail {
 
     private static final int MAX_TRY = 5;
 
-    public Gmail() {
+    public Posteo() {
 
     }
 
@@ -22,7 +22,7 @@ public class Gmail extends Mail {
         //gmail Props
         Properties props = new Properties();
 
-        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.host", "posteo.de");
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.put("mail.smtp.auth", "true");

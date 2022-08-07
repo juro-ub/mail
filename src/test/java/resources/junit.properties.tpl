@@ -1,4 +1,4 @@
 ##mail data##
-gmail = 
-gmailSecret = 
+posteo = 
+posteoSecret = 
 toMail =
