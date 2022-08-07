@@ -1,6 +1,6 @@
 # mail
 
-This java modul contains an implementation to send mails via gmail.
+This java modul contains an implementation to send mails via posteo.
 
 To test the project please copy the file 
 
