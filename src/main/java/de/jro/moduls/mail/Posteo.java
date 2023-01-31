@@ -19,7 +19,7 @@ public class Posteo extends Mail {
 
         File file = new File(filePath);
 
-        //gmail Props
+        //Posteo Props
         Properties props = new Properties();
 
         props.put("mail.smtp.host", "posteo.de");
