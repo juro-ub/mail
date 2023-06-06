@@ -28,7 +28,7 @@ public class Posteo extends Mail {
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.port", "465");
-        props.setProperty("mail.smtp.socketFactory.fallback", "false");
+        props.put("mail.smtp.socketFactory.fallback", "false");
         props.put("mail.smtp.ssl.protocols", "TLSv1.2");
 
         Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
@@ -54,11 +54,10 @@ public class Posteo extends Mail {
         messageBodyPart.setContent(content, "text/html");
         multipart.addBodyPart(messageBodyPart);
         // add File
-        if (file != null && file.exists()) {
+        if (file.exists()) {
             MimeBodyPart attachPart = new MimeBodyPart();
             attachPart.attachFile(file);
             multipart.addBodyPart(attachPart);
-
         }
         // sets the multi-part as e-mail's content
         message.setContent(multipart);
